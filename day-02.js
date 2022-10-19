@@ -76,5 +76,24 @@ function answer3() {
 //Basic data types--Array
 //https://www.codewars.com/kata/571effabb625ed9b0600107a
 
+function getLength(arr) {
+  return arr.length;
+}
+function getFirst(arr) {
+  return arr[0];
+}
+function getLast(arr) {
+  return arr[arr.length - 1];
+}
+function pushElement(arr) {
+  let el = 1;
+  arr.push(el);
+  return arr;
+}
+function popElement(arr) {
+  arr.pop();
+  return arr;
+}
+
 //Basic data types--Object
 //https://www.codewars.com/kata/571f1eb77e8954a812000837
