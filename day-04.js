@@ -28,7 +28,20 @@ function pickIt(arr) {
 
 // https://www.codewars.com/kata/5721c189cdd71194c1000b9b/train/javascript
 
-// add solution!!!
+function grabDoll(dolls) {
+  let bag = [];
+  for (let i = 0; i < dolls.length; i++) {
+    if (dolls[i] === "Hello Kitty" || dolls[i] === "Barbie doll") {
+      bag.push(dolls[i]);
+      if (bag.length === 3) {
+        break;
+      }
+      continue;
+    }
+  }
+  return bag;
+}
+
 
 // https://www.codewars.com/kata/5722b3f0bd5583cf44001000/train/javascript
 
