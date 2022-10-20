@@ -12,3 +12,17 @@ function correctTail(body, tail) {
 
 
 // https://www.codewars.com/kata/56f6ad906b88de513f000d96
+
+function bonusTime(salary, bonus) {
+  let result;
+  if (bonus === true) {
+    result = salary * 10;
+  } else {
+    result = salary;
+  }
+  return `\u00A3` + result;
+}
+
+// https://www.codewars.com/kata/5a58d889880385c2f40000aa
+
+
