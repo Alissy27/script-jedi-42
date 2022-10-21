@@ -25,4 +25,14 @@ function bonusTime(salary, bonus) {
 
 // https://www.codewars.com/kata/5a58d889880385c2f40000aa
 
+function automorphic(n) {
+  let square = n * n;
+  stingOne = n + "";
+  stringTwo = square + "";
+  if (stringTwo.endsWith(stingOne)) {
+    return "Automorphic";
+  } else {
+    return "Not!!";
+  }
+}
 
