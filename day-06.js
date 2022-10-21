@@ -22,7 +22,14 @@ function maxMultiple(divisor, bound) {
 
 // https://www.codewars.com/kata/is-he-gonna-survive/train/javascript
 
-// no solution yet
+function hero(bullets, dragons) {
+  let needBullets = dragons * 2;
+  if (needBullets <= bullets) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 //https://www.codewars.com/kata/59441520102eaa25260000bf/train/javascript
 
