@@ -15,11 +15,11 @@ function padIt(str, n) {
 // https://www.codewars.com/kata/5721a78c283129e416000999/train/javascript
 
 function pickIt(arr) {
-  let odd = [],
-    even = [];
+  const odd = [];
+  const even = [];
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 == 1) odd.push(arr[i]);
+    if (arr[i] % 2 === 1) odd.push(arr[i]);
     else even.push(arr[i]);
   }
 
@@ -29,7 +29,7 @@ function pickIt(arr) {
 // https://www.codewars.com/kata/5721c189cdd71194c1000b9b/train/javascript
 
 function grabDoll(dolls) {
-  let bag = [];
+  const bag = [];
   for (let i = 0; i < dolls.length; i++) {
     if (dolls[i] === "Hello Kitty" || dolls[i] === "Barbie doll") {
       bag.push(dolls[i]);
@@ -43,13 +43,15 @@ function grabDoll(dolls) {
 }
 
 
+
 // https://www.codewars.com/kata/5722b3f0bd5583cf44001000/train/javascript
 
 function giveMeFive(obj) {
-  let z = [];
+  const newObj = [];
   for (let key in obj) {
-    if (key.length == 5) z.push(key);
-    if (obj[key].length == 5) z.push(obj[key]);
+    if (key.length === 5) newObj.push(key);
+    if (obj[key].length === 5) newObj.push(obj[key]);
   }
-  return z;
+  return newObj;
 }
+
