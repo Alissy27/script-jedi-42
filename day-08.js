@@ -2,13 +2,13 @@
 
 const whatNumberIsIt = (n) => {
   return `Input number is ${
-    n == Number.MAX_VALUE
+    n === Number.MAX_VALUE
       ? "Number.MAX_VALUE"
-      : n == Number.MIN_VALUE
+      : n === Number.MIN_VALUE
       ? "Number.MIN_VALUE"
-      : n == Number.NEGATIVE_INFINITY
+      : n === Number.NEGATIVE_INFINITY
       ? "Number.NEGATIVE_INFINITY"
-      : n == Number.POSITIVE_INFINITY
+      : n === Number.POSITIVE_INFINITY
       ? "Number.POSITIVE_INFINITY"
       : Number.isNaN(n)
       ? "Number.NaN"
@@ -23,13 +23,13 @@ function colorOf(r, g, b) {
   r = r.toString(16);
   g = g.toString(16);
   b = b.toString(16);
-  if (r.length == 1) {
+  if (r.length === 1) {
     r = "0" + r;
   }
-  if (g.length == 1) {
+  if (g.length === 1) {
     g = "0" + g;
   }
-  if (b.length == 1) {
+  if (b.length === 1) {
     b = "0" + b;
   }
   return "#" + r + g + b;
@@ -38,8 +38,8 @@ function colorOf(r, g, b) {
 // https://www.codewars.com/kata/57256064856584bc47000611/train/javascript
 
 function howManySmaller(arr, n) {
-  let newArr = arr.map((arr) => 0 + +arr.toFixed(2));
-  let result = [];
+  const newArr = arr.map((arr) => 0 + +arr.toFixed(2));
+  const result = [];
 
   for (let i = 0; i < newArr.length; i++) {
     if (newArr[i] < n) {
