@@ -36,3 +36,15 @@ function colorOf(r, g, b) {
 }
 
 // https://www.codewars.com/kata/57256064856584bc47000611/train/javascript
+
+function howManySmaller(arr, n) {
+  let newArr = arr.map((arr) => 0 + +arr.toFixed(2));
+  let result = [];
+
+  for (let i = 0; i < newArr.length; i++) {
+    if (newArr[i] < n) {
+      result.push(newArr[i]);
+    }
+  }
+  return result.length;
+}
