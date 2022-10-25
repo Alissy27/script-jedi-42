@@ -1,14 +1,15 @@
 // https://www.codewars.com/kata/is-this-my-tail/train/javascript
 
 function correctTail(body, tail) {
-  let sub = body.substr(-1);
+  const subString = body.substr(-1);
 
-  if (sub === tail) {
+  if (subString === tail) {
     return true;
   } else {
     return false;
   }
 }
+
 
 
 // https://www.codewars.com/kata/56f6ad906b88de513f000d96
@@ -26,7 +27,7 @@ function bonusTime(salary, bonus) {
 // https://www.codewars.com/kata/5a58d889880385c2f40000aa
 
 function automorphic(n) {
-  let square = n * n;
+  const square = n * n;
   stingOne = n + "";
   stringTwo = square + "";
   if (stringTwo.endsWith(stingOne)) {
