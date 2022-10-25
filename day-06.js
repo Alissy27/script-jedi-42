@@ -3,27 +3,25 @@
 // first solution was
 
 function maxMultiple(divisor, bound) {
-  let remainder = bound % divisor;
-  let d = bound - remainder
-    if (bound % divisor === 0) {
-      return bound
-    } else if (bound % divisor !== 0) {
-      return d
-    }
+  const remainder = bound % divisor;
+  const result = bound - remainder;
+  if (bound % divisor === 0) {
+    return bound;
+  } else if (bound % divisor !== 0) {
+    return result;
+  }
 }
 
 // and rewrited
 
 function maxMultiple(divisor, bound) {
-  let remainder = bound % divisor;
-  let d = bound - remainder;
-  return d;
+  return bound - (bound % divisor);
 }
 
 // https://www.codewars.com/kata/is-he-gonna-survive/train/javascript
 
 function hero(bullets, dragons) {
-  let needBullets = dragons * 2;
+  const needBullets = dragons * 2;
   if (needBullets <= bullets) {
     return true;
   } else {
@@ -34,6 +32,6 @@ function hero(bullets, dragons) {
 //https://www.codewars.com/kata/59441520102eaa25260000bf/train/javascript
 
 function unusualFive() {
-  let str = "fives";
-  return str.length;
+  const result = "fives";
+  return result.length;
 }
