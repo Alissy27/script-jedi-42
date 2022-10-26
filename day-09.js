@@ -29,3 +29,15 @@ function firstToLast(str, c) {
     return -1;
   }
 }
+
+// https://www.codewars.com/kata/57280481e8118511f7000ffa/train/javascript
+
+function splitAndMerge(string, separator) {
+  const array = string.split(" ");
+  const result = [];
+
+  for (let i = 0; i < array.length; i++) {
+    result.push(array[i].toString().split("").join(separator).concat(" "));
+  }
+  return result.join("").toString().trim();
+}
