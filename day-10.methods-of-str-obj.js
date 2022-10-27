@@ -14,3 +14,19 @@ function alienLanguage(str) {
 }
 
 // https://www.codewars.com/kata/57284d23e81185ae6200162a
+
+// NO SOLUTION YET
+
+//  https://www.codewars.com/kata/5729b103dd8bac11a900119e/train/javascript
+
+function fiveLine(s) {
+  const newS = s.trim();
+  let result = "";
+
+  for (let i = 0; i <= 4; i++) {
+    result = result + newS + newS.repeat(i) + "\n";
+  }
+  return result.trim();
+}
+  
+    
