@@ -1,6 +1,35 @@
 // https://www.codewars.com/kata/playing-with-sets-equal-or-not/train/javascript
 
-//no solution yet
+function areEqual(s1, s2) {
+  if (s1.size === s2.size) {
+    const array = [].concat(Array.from(s1), Array.from(s2));
+    const setArr = new Set(array);
+    if (setArr.size === s1.size) {
+      return true;
+    } else {
+      return false;
+    }
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function notEqual(s1, s2) {
+  if (s1.size === s2.size) {
+    const array = [].concat(Array.from(s1), Array.from(s2));
+    const setArr = new Set(array);
+    if (setArr.size === s1.size) {
+      return false;
+    } else {
+      return true;
+    }
+  } else if (s1.size !== s2.size) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
 
