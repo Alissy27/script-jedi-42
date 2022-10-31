@@ -14,7 +14,6 @@ function alienLanguage(str) {
 }
 
 // https://www.codewars.com/kata/57284d23e81185ae6200162a
-//tests passed, answers no
 
 function topSecret(str) {
   const arrFromString = str.split("");
@@ -46,11 +45,6 @@ function topSecret(str) {
       arrFromString[i].charCodeAt() <= 30
     ) {
       res.push(String.fromCharCode(arrFromString[i].charCodeAt() - 3));
-    } else if (
-      arrFromString[i].charCodeAt() > 49 &&
-      arrFromString[i].charCodeAt() < 57
-    ) {
-      res.push(String.fromCharCode(arrFromString[i].charCodeAt() + 3));
     } else {
       res.push(String.fromCharCode(arrFromString[i].charCodeAt()));
     }
