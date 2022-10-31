@@ -50,7 +50,7 @@ function topSecret(str) {
       arrFromString[i].charCodeAt() > 49 &&
       arrFromString[i].charCodeAt() < 57
     ) {
-      res.push(String.fromCharCode(arrFromString[i].charCodeAt() - 3));
+      res.push(String.fromCharCode(arrFromString[i].charCodeAt() + 3));
     } else {
       res.push(String.fromCharCode(arrFromString[i].charCodeAt()));
     }
