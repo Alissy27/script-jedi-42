@@ -41,6 +41,16 @@ function topSecret(str) {
       res.push(String.fromCharCode(121));
     } else if (arrFromString[i].charCodeAt() === 99) {
       res.push(String.fromCharCode(122));
+    } else if (
+      arrFromString[i].charCodeAt() >= 39 &&
+      arrFromString[i].charCodeAt() <= 30
+    ) {
+      res.push(String.fromCharCode(arrFromString[i].charCodeAt() - 3));
+    } else if (
+      arrFromString[i].charCodeAt() > 49 &&
+      arrFromString[i].charCodeAt() < 57
+    ) {
+      res.push(String.fromCharCode(arrFromString[i].charCodeAt() - 3));
     } else {
       res.push(String.fromCharCode(arrFromString[i].charCodeAt()));
     }
