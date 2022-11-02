@@ -17,6 +17,17 @@ describe('`[].entries()` returns an iterator object with all entries', function(
     assert.deepEqual(secondValue, [1, void 0]);
   });
   
+  // other var
+  
+  function entries(){
+    const arr = ['one'];
+    arr[2] = 'three';
+    const secondValue = Array.from(arr.entries())[1] // тут спробуй 0,1,2 і все зрозумієш
+    console.log(secondValue)
+
+}
+entries()
+  
   // without solution
   describe('returns an iterable', function() {
     it('has `next()` to iterate', function() {
