@@ -11,3 +11,30 @@ function match(candidate, job) {
     throw new Error(`Error. Not enough data`);
   }
 }
+// https://www.codewars.com/kata/56c2578be8b139bd5c001bd8/train/javascript
+// IT DOESN'T WORK!(
+
+function match(job, candidates) {
+  const [currentLocationCandidate] = candidates.currentLocation
+  const [desiredLocationsCandidate] = candidates.desiredLocations
+  const [jobLocations] = job.locations
+      
+  const candidateArrLocation = [...currentLocationCandidate, ...desiredLocationsCandidate]
+  
+   const matchLocation = candidateArrLocation.some( n => jobLocations.includes(n))
+  
+  const result = [];
+    
+  
+  for (let candidate in candidates) {
+    if (matchLocation === true)  {
+      if (job.equityMax > 0 && candidate.desiresEquity === true) {
+        result.push(candidate);
+      }
+    } else if (job.equityMax === false && candidate.desiresEquity === false) {
+      result.push(candidate);
+    }
+  }
+  return result;
+}
+
