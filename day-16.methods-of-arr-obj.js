@@ -20,3 +20,22 @@ function threeInOne(arr) {
   return result;
 }
 
+// https://www.codewars.com/kata/572fdeb4380bb703fc00002c/solutions/javascript
+
+function isolateIt(arr) {
+  const result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    const newElem = [];
+    const leftSide = arr[i].slice(0, Math.floor(arr[i].length / 2)).split();
+    const rightSide = arr[i]
+      .slice(Math.round(arr[i].length / 2), arr[i].length)
+      .split();
+
+    newElem.push(leftSide);
+    newElem.push(rightSide);
+    result.push(newElem.join("|"));
+  }
+
+  return result;
+}
