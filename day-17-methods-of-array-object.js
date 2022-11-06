@@ -36,6 +36,24 @@ function countGrade(scores) {
   return result;
 }
 
+// https://www.codewars.com/kata/57308546bd9f0987c2000d07
+
+function mirrorImage(arr) {
+  const arrMirror = [];
+  const arrNull = [-1, -1];
+
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] == arr[i + 1].toString().split("").reverse().join("")) {
+      arrMirror.push(arr[i], arr[i + 1]);
+    }
+  }
+  if (arrMirror.length >= 2) {
+    return arrMirror.splice(0, 2);
+  } else {
+    return arrNull;
+  }
+}
+
 // https://www.codewars.com/kata/5731861d05d14d6f50000626
 
 function bigToSmall(arr) {
