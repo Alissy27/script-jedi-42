@@ -11,3 +11,12 @@ function loopArr(arr, direction, steps) {
     return slicedArr.concat(res);
   }
 }
+
+// https://www.codewars.com/kata/572ab0cfa3af384df7000ff8/train/javascript
+
+function shuffleIt(arr, ...arrRest) {
+  arrRest.forEach(([a, b]) => ([arr[a], arr[b]] = [arr[b], arr[a]]));
+
+  return arr;
+}
+
