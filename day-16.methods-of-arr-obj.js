@@ -39,3 +39,12 @@ function isolateIt(arr) {
 
   return result;
 }
+
+// https://www.codewars.com/kata/572df796914b5ba27c000c90/train/javascript
+
+const sortIt = (arr) =>
+  [...arr].sort(
+    (a, b) =>
+      arr.filter((val) => val === a).length -
+        arr.filter((val) => val === b).length || b - a
+  );
