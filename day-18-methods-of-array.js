@@ -25,3 +25,40 @@ function blackAndWhite(arr) {
 
 // https://www.codewars.com/kata/5735956413c2054a680009ec
 
+function rndCode() {
+  const strLetter = "ABCDEFGHIJKLM";
+  const strNums = "0123456789";
+  const strSymb = "~!@#$%^&*";
+  function rndLetter() {
+    const arrLetter = strLetter.split("");
+    const randomLetter =
+      arrLetter[Math.floor(Math.random() * arrLetter.length)];
+    return randomLetter;
+  }
+
+  function rndNum() {
+    const arrNums = strNums.split("");
+    const randomNum = arrNums[Math.floor(Math.random() * arrNums.length)];
+    return randomNum;
+  }
+  function rndSymb() {
+    const arrSymb = strSymb.split("");
+    const randomSymb = arrSymb[Math.floor(Math.random() * arrSymb.length)];
+    return randomSymb;
+  }
+
+  return (
+    rndLetter() +
+    rndLetter() +
+    rndNum() +
+    rndNum() +
+    rndNum() +
+    rndNum() +
+    rndSymb() +
+    rndSymb()
+  );
+}
+
+rndCode();
+
+
