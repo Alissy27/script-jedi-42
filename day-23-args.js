@@ -10,3 +10,10 @@ function funcSum() {
     return res;
   }
 }
+
+
+// https://www.codewars.com/kata/5258b272e6925db09900386a/train/javascript
+
+function numbers(...argList) {
+  return argList.every((arg) => typeof arg === "number");
+}
