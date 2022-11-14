@@ -5,3 +5,10 @@ function solution(...str) {
   const strSet = new Set(strArray);
   return str.length === strSet.size ? false : true;
 }
+
+//  https://www.codewars.com/kata/541629460b198da04e000bb9/train/javascript
+
+function last() {
+  const lastElem = arguments[arguments.length - 1];
+  return lastElem[lastElem.length - 1] || lastElem;
+}
