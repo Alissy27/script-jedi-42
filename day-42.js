@@ -1,3 +1,24 @@
+//  https://www.codewars.com/kata/55c04b4cc56a697bb0000048/train/javascript
+
+function scramble(str1, str2) {
+  let numLetters = {};
+
+  for (const letter of str2) {
+    if (numLetters[letter]) numLetters[letter]++;
+    else numLetters[letter] = 1;
+  }
+
+  for (const letter of str1) {
+    if (numLetters[letter] && numLetters[letter] !== 0) numLetters[letter]--;
+  }
+
+  for (const key in numLetters) {
+    if (numLetters[key] !== 0) return false;
+  }
+  return true;
+}
+
+
 // https://leetcode.com/problems/two-sum/
 
 function twoSum(nums, target) {
