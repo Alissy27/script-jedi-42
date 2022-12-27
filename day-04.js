@@ -1,6 +1,20 @@
 // https://www.codewars.com/kata/57216d4bcdd71175d6000560/train/javascript
 
 function padIt(str, n) {
+  let padedStr = str;
+  let stars = n
+  while (stars > 0) {
+    if (stars % 2) {
+      padedStr = "*" + padedStr;
+    } else {
+      padedStr = padedStr + "*";
+    }
+    stars--;
+  }
+  return padedStr;
+}
+
+function padIt(str, n) {
   while (n > 0) {
     if (n % 2) {
       str = "*" + str;
