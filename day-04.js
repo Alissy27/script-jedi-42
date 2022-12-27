@@ -59,11 +59,11 @@ function grabDoll(dolls) {
 // https://www.codewars.com/kata/5722b3f0bd5583cf44001000/train/javascript
 
 function giveMeFive(obj) {
-  const newObj = [];
-  for (let key in obj) {
-    if (key.length === 5) newObj.push(key);
-    if (obj[key].length === 5) newObj.push(obj[key]);
+  const fives = [];
+  for (const key in obj) {
+    if (key.length === 5) fives.push(key);
+    if (obj[key].length === 5) fives.push(obj[key]);
   }
-  return newObj;
+  return fives;
 }
 
