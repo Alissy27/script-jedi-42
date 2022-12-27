@@ -21,6 +21,10 @@ function maxMultiple(divisor, bound) {
 // https://www.codewars.com/kata/is-he-gonna-survive/train/javascript
 
 function hero(bullets, dragons) {
+  return bullets / 2 >= dragons;
+}
+
+function hero(bullets, dragons) {
   const needBullets = dragons * 2;
   if (needBullets <= bullets) {
     return true;
