@@ -1,6 +1,10 @@
 // https://www.codewars.com/kata/571f832f07363d295d001ba8/train/javascript
 
 function trueOrFalse(val) {
+  return Boolean(val).toString();
+}
+
+function trueOrFalse(val) {
   if (val == false) {
     return "false";
   } else if (val == null && val == undefined) {
@@ -11,6 +15,10 @@ function trueOrFalse(val) {
 }
 
 // https://www.codewars.com/kata/57202aefe8d6c514300001fd
+
+function saleHotdogs(n) {
+  return n < 5 ? n * 100 : n < 10 ? n * 95 : n * 90;
+}
 
 function saleHotdogs(n) {
   if (n < 5) {
