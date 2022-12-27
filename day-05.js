@@ -1,5 +1,10 @@
 // https://www.codewars.com/kata/is-this-my-tail/train/javascript
 
+function correctTail(body, tail) { 
+   const subString = body.substr(body.length - tail.length)
+   return subString === tail 
+}
+
 function correctTail(body, tail) {
   const subString = body.substr(-1);
 
