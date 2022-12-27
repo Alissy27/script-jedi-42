@@ -44,9 +44,9 @@ function pickIt(arr) {
 
 function grabDoll(dolls) {
   const bag = [];
-  for (let i = 0; i < dolls.length; i++) {
-    if (dolls[i] === "Hello Kitty" || dolls[i] === "Barbie doll") {
-      bag.push(dolls[i]);
+  for (const doll of dolls) {
+    if (["Hello Kitty", "Barbie doll"].includes(doll)) {
+      bag.push(doll);
       if (bag.length === 3) {
         break;
       }
@@ -55,8 +55,6 @@ function grabDoll(dolls) {
   }
   return bag;
 }
-
-
 
 // https://www.codewars.com/kata/5722b3f0bd5583cf44001000/train/javascript
 
