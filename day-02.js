@@ -63,6 +63,5 @@ const popElement = (arr) => {
 //Basic data types--Object
 //https://www.codewars.com/kata/571f1eb77e8954a812000837
 
-function animal(obj) {
-  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
-}
+const animal = ({ color, name, legs }) =>
+  `This ${color} ${name} has ${legs} legs.`;
