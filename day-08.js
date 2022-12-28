@@ -45,6 +45,16 @@ function colorOf(r, g, b) {
 
 // https://www.codewars.com/kata/57256064856584bc47000611/train/javascript
 
+
+function howManySmaller(nums, n) {
+  const rounded = nums.map((num) => +num.toFixed(2));
+  const smaller = rounded.reduce(
+    (smaller, elem) => (elem < n ? smaller + 1 : smaller),
+    0
+  );
+  return smaller;
+}
+
 function howManySmaller(arr, n) {
   const newArr = arr.map((arr) => 0 + +arr.toFixed(2));
   const result = [];
