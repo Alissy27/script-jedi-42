@@ -20,6 +20,14 @@ const whatNumberIsIt = (n) => {
 //https://www.codewars.com/kata/57238ceaef9008adc7000603/train/javascript
 
 function colorOf(r, g, b) {
+  return "#" + toHexWithPad(r, 2) + toHexWithPad(g, 2) + toHexWithPad(b, 2);
+}
+
+function toHexWithPad(dec, pad) {
+  return dec.toString(16).padStart(pad, 0);
+}
+
+function colorOf(r, g, b) {
   r = r.toString(16);
   g = g.toString(16);
   b = b.toString(16);
