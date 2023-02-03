@@ -15,22 +15,9 @@ function areEqual(s1, s2) {
   }
 }
 
-function notEqual(s1, s2) {
-  if (s1.size === s2.size) {
-    const array = [].concat(Array.from(s1), Array.from(s2));
-    const setArr = new Set(array);
-    if (setArr.size === s1.size) {
-      return false;
-    } else {
-      return true;
-    }
-  } else if (s1.size !== s2.size) {
-    return true;
-  } else {
-    return false;
-  }
+function notEqual(s1, s2){
+  return !areEqual(s1, s2)
 }
-
 
 
 // https://www.codewars.com/kata/5609fd5b44e602b2ff00003a/train/javascript
